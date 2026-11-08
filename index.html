@@ -232,7 +232,7 @@ const editorialCollections=[{key:'interviews',name:'Les interviews incontournabl
 const collectionMatches=(p,key)=>key==='interviews'?/lior|interview|raz/i.test(p.title):key==='stories'?/rom|star academy|rencontre|secours/i.test(p.title):/mezouza|secours|mariage/i.test(p.title);
 const recentReels=()=>verifiedReels.slice().sort((a,b)=>b.date.localeCompare(a.date));
 const topReels=()=>verifiedReels.slice().sort((a,b)=>b.views-a.views);
-const reelTile=(p,views=false)=>'<a class="video popular-reel" href="https://www.instagram.com/reel/'+p.id+'/" target="_blank" rel="noopener" aria-label="'+esc(p.title)+'"><div class="poster"><img loading="lazy" src="'+p.image+'" alt="'+esc(p.title)+'">'+(views?'<span class="views-pill">'+String(Math.round(p.views)).replace(/\\B(?=(\\d{3})+(?!\\d))/g,'\u202f')+' vues</span>':'')+'</div></a>';
+const reelTile=(p,views=false)=>'<a class="video popular-reel" href="https://www.instagram.com/reel/'+p.id+'/" target="_blank" rel="noopener" aria-label="'+esc(p.title)+'"><div class="poster"><img loading="lazy" src="'+p.image+'" alt="'+esc(p.title)+'">'+(views?'<span class="views-pill">'+String(Math.round(p.views)).replace(/\B(?=(\d{3})+(?!\d))/g,'\u202f')+' vues</span>':'')+'</div></a>';
 
 const cleanText=t=>String(t||'').replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/gu,'').replace(/\s{2,}/g,' ').trim();
 const prettyCategory=c=>({'À découvrir':'Vidéo','Inside':'Reportage','Outside':'Micro-trottoir','Interviews':'Interview'}[c]||c||'Vidéo');
