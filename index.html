@@ -86,6 +86,48 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,"Segoe UI",sans-serif;color:#1
 .universe-editorial a{min-height:135px;padding:18px}
 .universe-editorial strong{font-size:17px}
 }
+
+/* Culture Club: mobile-first visual discovery */
+:root{--ink:#111827;--blue:#101b38;--line:#edf0f3}
+body{color:#121722;background:#fff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+.top{height:72px;border-bottom:0;max-width:1120px}
+.top img{height:37px!important}
+.content{padding-top:12px;max-width:1120px}
+.club-topline{display:flex;justify-content:space-between;color:#888e9b;font-size:10px;letter-spacing:1.25px;font-weight:700;padding:12px 0}
+.club-filters{display:flex;gap:8px;overflow:auto;scrollbar-width:none;padding:12px 0 23px}
+.club-filters button{white-space:nowrap;border:0;background:#f3f4f6;color:#20242d;border-radius:100px;padding:11px 17px;font-size:13px;font-weight:600}
+.club-filters button.selected{background:#101b38;color:white}
+.club-hero{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1fr);gap:32px;background:#f6f7f9;border-radius:19px;padding:24px;align-items:center}
+.club-cover{width:100%;max-width:350px;aspect-ratio:9/16;position:relative;border:0;padding:0;border-radius:17px;overflow:hidden;background:#121722;text-align:left;display:block}
+.club-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.club-gradient{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.88),transparent 64%)}
+.club-cover-tag{position:absolute;top:18px;left:17px;background:#1b2341d9;color:white;padding:8px 11px;border-radius:7px;font-size:10px;font-weight:700;letter-spacing:.5px}
+.club-cover-title{position:absolute;bottom:26px;left:19px;right:67px;color:white;font-size:clamp(22px,3.2vw,36px);font-weight:700;line-height:1.07;letter-spacing:-.8px}
+.club-cover-play{position:absolute;bottom:23px;right:17px;background:white;color:#101b38;border-radius:50%;height:46px;width:46px;display:grid;place-items:center}
+.club-hero-side{padding:18px}
+.club-kicker{font-size:11px;letter-spacing:1.4px;color:#68738b;font-weight:700}
+.club-hero-side h1{font-size:clamp(37px,5vw,70px);font-weight:600;line-height:1.02;letter-spacing:-.055em;margin:18px 0}
+.club-hero-side p{font-size:16px;line-height:1.6;max-width:340px}
+.club-hero-side button{background:#101b38;color:white;border:0;border-radius:12px;padding:15px 20px;margin-top:18px;font-size:13px;font-weight:700}
+.club-hero-side button span{margin-left:22px}
+.club-section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:35px 0 16px}
+.club-section-head h2{font-size:24px;font-weight:700;letter-spacing:-.7px;margin:0}
+.club-section-head button{background:none;border:0;font-size:12px;color:#1b2341;font-weight:600;white-space:nowrap}
+.club-scroll{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:8px;scrollbar-width:none}
+.club-scroll .video{flex:0 0 clamp(150px,22%,230px);scroll-snap-align:start}
+.club-scroll .poster img{aspect-ratio:9/16!important;object-fit:cover}
+.club-scroll .video strong{font-size:13px}
+.club-meme-strip{background:#111b38;color:white;border-radius:17px;display:grid;grid-template-columns:130px 1fr;align-items:center;gap:20px;padding:22px 28px;min-height:170px}
+.club-meme-mark{font-size:115px;letter-spacing:-.1em;line-height:1;font-weight:800;color:white}
+.club-meme-mark span{color:#a9b8d9}
+.club-meme-strip strong{font-size:21px;letter-spacing:-.5px}
+.club-meme-strip p{font-size:13px;color:#d3d9e5;margin:8px 0 15px}
+.club-meme-strip a{font-size:12px;border-bottom:1px solid #fff;padding-bottom:4px;color:white}
+.club-event-scroll{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.club-universe{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.club-universe a{background:#f3f4f6;padding:22px;border-radius:13px;font-size:18px;font-weight:600;min-height:120px;display:flex;justify-content:space-between;align-items:end}
+.club-universe span{font-size:20px}
+@media(max-width:700px){.top{height:66px}.content{padding:7px 17px 105px}.club-topline{font-size:9px}.club-filters{padding:10px 0 18px}.club-hero{display:block;padding:0;background:none}.club-cover{width:100%;max-width:none;aspect-ratio:9/16;max-height:640px;border-radius:18px}.club-cover-title{font-size:clamp(27px,7vw,42px)}.club-hero-side{display:none}.club-section-head{margin:32px 0 14px}.club-section-head h2{font-size:22px}.club-scroll .video{flex:0 0 39%;min-width:145px}.club-meme-strip{grid-template-columns:78px 1fr;gap:15px;padding:20px;min-height:135px}.club-meme-mark{font-size:82px}.club-meme-strip strong{font-size:16px}.club-meme-strip p{font-size:11px}.club-event-scroll{display:flex;overflow-x:auto;gap:12px;scroll-snap-type:x mandatory}.club-event-scroll .event{flex:0 0 75%;scroll-snap-align:start}.club-universe{grid-template-columns:1fr 1fr}.club-universe a{min-height:110px;padding:18px;font-size:16px}}
 </style></head><body>
 <header class="top shell"><a href="/" aria-label="jewbuzz, accueil"><img src="https://jewbuzz.com/wp-content/uploads/jewbuzz/assets/Logo_jewbuzz_blue.svg" alt="jewbuzz" style="height:39px;max-width:155px;object-fit:contain"></a><div class="top-actions"><button class="iconbtn" id="searchBtn" aria-label="Recherche">⌕</button><button class="iconbtn" id="notifyBtn" aria-label="Notifications">♧</button></div></header>
 <main id="main" class="content shell"></main><nav id="nav" class="bottom"></nav>
@@ -104,17 +146,14 @@ const dashboardFeature=(heading,description,href,label)=>'<div class="dashboard-
 const tabs=['Accueil','Vidéos','Mèmes','Agenda','Plus'];
 function render(){document.getElementById('nav').innerHTML=tabs.map(t=>'<button data-tab="'+t+'" class="'+(tab===t?'active':'')+'"><svg viewBox="0 0 24 24">'+icons[t]+'</svg>'+t+'</button>').join('');const m=document.getElementById('main');
 if(tab==='Accueil'){const v=videos[0];const others=videos.filter(x=>x.id!==v.id);const humour=videos.filter(x=>/humour|darbouka|prix|pac|réveilles|kippour/i.test((x.category||'')+' '+x.title));m.innerHTML=
-'<div class="welcome"><div class="eyebrow">LE MÉDIA DE LA COMMUNAUTÉ</div><h1>Tout ce qui nous<br>rassemble.</h1><p>Les dernières histoires, les meilleurs moments et les rendez-vous à ne pas manquer.</p></div>'+
-'<div class="quick-nav">'+[['play-circle','Vidéos','Vidéos'],['smile','Mèmes','Mèmes'],['calendar','Agenda','Agenda'],['compass','Découvrir','Plus']].map(x=>'<button data-tab="'+x[2]+'"><span>'+({ 'play-circle':'▷','smile':'☺','calendar':'▦','compass':'✧'}[x[0]])+'</span>'+x[1]+'</button>').join('')+'</div>'+
-'<section class="feature-layout"><div class="feature-media"><button data-video="'+v.id+'" class="feature-poster"><img src="'+esc(poster(v))+'" alt="'+esc(v.title)+'"><span class="feature-play">▶</span></button></div><div class="feature-copy"><div class="eyebrow">À LA UNE · VIDÉO</div><h2>'+esc(v.title)+'</h2><p>Le dernier contenu officiel de jewbuzz, à découvrir maintenant.</p><button class="dark-button" data-video="'+v.id+'">Regarder <span>↗</span></button><div class="feature-counter">01 / À LA UNE</div></div></section>'+
-'<div class="editorial-heading"><div><span class="eyebrow">EN CE MOMENT</span><h2>Les nouveautés.</h2></div><button data-tab="Vidéos">Voir toutes les vidéos ↗</button></div>'+
-'<div class="editorial-grid">'+others.slice(0,4).map(card).join('')+'</div>'+
-'<section class="meme-home"><div class="meme-home-copy"><div class="eyebrow">LES MÈMES</div><h2>Le sourire<br>du jour.</h2><p>Les publications humoristiques officielles de jewbuzz, à retrouver et partager.</p><button data-tab="Mèmes">Explorer les mèmes <span>↗</span></button></div><div class="meme-home-media"><div class="meme-monogram">j<span>.</span></div><div class="meme-home-foot">jewbuzz · Humour & communauté</div></div></section>'+
-'<div class="editorial-heading"><div><span class="eyebrow">À NOTER</span><h2>À vos agendas.</h2></div><button data-tab="Agenda">Tous les événements ↗</button></div>'+
-'<div class="event-grid">'+events.map(eventCard).join('')+'</div>'+
-'<div class="editorial-heading"><div><span class="eyebrow">TOUT L’UNIVERS</span><h2>Plus que des vidéos.</h2></div><button data-tab="Plus">Découvrir ↗</button></div>'+
-'<div class="universe-editorial">'+[['jewbuzz Love','Rencontres','https://jewbuzz.com/love/'],['jewbuzz Shop','Créations','https://jewbuzz.shop/'],['Real Estate','Immobilier','https://jewbuzz-realestate.com/']].map(x=>'<a href="'+x[2]+'" target="_blank" rel="noopener"><small>'+x[1]+'</small><strong>'+x[0]+'</strong><span>↗</span></a>').join('')+'</div>'+
-'<div class="app-install"><div><strong>jewbuzz, toujours avec vous.</strong><small>Ajoutez l’application à votre écran d’accueil.</small></div><button id="installApp">Installer ↗</button></div>';
+'<div class="club-topline"><span>À DÉCOUVRIR</span><span>LE MEILLEUR DE JEWBUZZ</span></div>'+
+'<div class="club-filters">'+[['Tout','Accueil'],['Vidéos','Vidéos'],['Mèmes','Mèmes'],['Événements','Agenda'],['Univers','Plus']].map((x,i)=>'<button class="'+(i===0?'selected':'')+'" data-tab="'+x[1]+'">'+x[0]+'</button>').join('')+'</div>'+
+'<section class="club-hero"><button class="club-cover" data-video="'+v.id+'"><img src="'+esc(poster(v))+'" alt="'+esc(v.title)+'"><span class="club-gradient"></span><span class="club-cover-tag">INTERVIEW JEWBUZZ</span><span class="club-cover-title">'+esc(v.title)+'</span><span class="club-cover-play">▶</span></button><div class="club-hero-side"><div class="club-kicker">À LA UNE</div><h1>À voir.<br>À vivre.<br>À partager.</h1><p>Les histoires, les rencontres et les moments qui font jewbuzz.</p><button data-video="'+v.id+'">Découvrir la vidéo <span>↗</span></button></div></section>'+
+'<div class="club-section-head"><h2>Nouveautés</h2><button data-tab="Vidéos">Tout voir →</button></div><div class="club-scroll">'+others.slice(0,9).map(card).join('')+'</div>'+
+'<div class="club-section-head"><h2>Les mèmes de la semaine</h2><button data-tab="Mèmes">Tout voir →</button></div><div class="club-meme-strip"><div class="club-meme-mark">j<span>.</span></div><div><strong>Un peu d’humour, beaucoup de jewbuzz.</strong><p>Les mèmes officiels de la communauté.</p><a href="https://www.instagram.com/jewbuzz/" target="_blank" rel="noopener">Voir les publications Instagram ↗</a></div></div>'+
+'<div class="club-section-head"><h2>Humour & divertissement</h2><button data-tab="Vidéos">Explorer →</button></div><div class="club-scroll">'+humour.slice(0,8).map(card).join('')+'</div>'+
+'<div class="club-section-head"><h2>À venir</h2><button data-tab="Agenda">L’agenda →</button></div><div class="club-event-scroll">'+events.map(eventCard).join('')+'</div>'+
+'<div class="club-section-head"><h2>Tout l’univers jewbuzz</h2><button data-tab="Plus">Découvrir →</button></div><div class="club-universe">'+[['jewbuzz Love','https://jewbuzz.com/love/'],['Shop','https://jewbuzz.shop/'],['Real Estate','https://jewbuzz-realestate.com/']].map(x=>'<a href="'+x[1]+'" target="_blank" rel="noopener">'+x[0]+' <span>↗</span></a>').join('')+'</div>';
 }
 else if(tab==='Vidéos'){const cats=['Tout','Interviews','Story Time','Outside','Inside','Chrono','Business','Humour','À découvrir'];m.innerHTML='<div class="eyebrow">Le catalogue</div><h1 class="title">À regarder.</h1><p class="subtitle">Tous les formats jewbuzz, sans détour.</p><div class="chips">'+cats.map(c=>'<button class="chip '+(filter===c?'active':'')+'" data-filter="'+c+'">'+c+'</button>').join('')+'</div><div class="video-grid">'+videos.filter(v=>filter==='Tout'||v.category===filter).map(card).join('')+'</div>'}
 else if(tab==='Mèmes')m.innerHTML='<div class="eyebrow">À partager</div><h1 class="title">Les mèmes.</h1><p class="subtitle">L’humour de la communauté, au quotidien.</p>'+memeCard()+'<div class="heading"><h2>Nos vidéos les plus drôles</h2><button data-tab="Vidéos">Voir tout ↗</button></div><div class="video-grid">'+videos.filter(v=>/humour|darbouka|prix|pac|réveilles|kippour/i.test((v.category||'')+' '+v.title)).slice(0,6).map(card).join('')+'</div>';
