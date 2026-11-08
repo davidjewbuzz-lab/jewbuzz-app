@@ -254,7 +254,7 @@ const formatById={
 };
 const reelFormatById={'DfcwPtJRm3N':'Interviews','DfXpbY0RW7i':'Humour','DfNPEHrxqql':'Reportage','DewyE_UNYWa':'Story Time','DertBG0x5YW':'Outside','Dee_3-Fx-_S':'Reportage','DeXNEMoRILr':'Humour','DeO_zGhttPl':'Reportage','DeKPoR_RAT6':'Story Time'};
 const normalizedFormat=v=>formatById[v.id]||({'Interviews':'Interviews','Story Time':'Story Time','Business':'Business','Le Babaou':'Humour','Torah inconnue':'Humour','Inside':'Inside','Outside':'Outside','Chrono':'Chrono','Reportage':'Reportage','Humour':'Humour'}[v.category]||'À découvrir');
-const matchesFormat=(v,format)=>{const category=normalizedFormat(v);return format==='Tout'||category===format||(format==='Interviews jewbuzz'&&category==='Interviews')||(format==='Reportages'&&(category==='Inside'||category==='Reportage'))||(format==='Micro-trottoir'&&category==='Outside')};
+const matchesFormat=(v,format)=>{const category=normalizedFormat(v);return format==='Tout'||category===format||(format==='Interviews jewbuzz'&&category==='Interviews')||(format==='Reportages'&&category==='Inside')||(format==='Micro-trottoir'&&category==='Outside')};
 const formatVideos=format=>videos.filter(v=>matchesFormat(v,format.name)).slice(0,24);
 const formatReels=format=>verifiedReels.filter(p=>matchesFormat({id:p.id,category:reelFormatById[p.id]},format.name));
 const formatDescriptions={'Reportages':'Dans les coulisses de lieux et d’histoires à découvrir.','Micro-trottoir':'La parole à la communauté, dans la rue.','Story Time':'Des témoignages et des parcours hors du commun.','Interviews jewbuzz':'Des rencontres exclusives avec des personnalités.','Chrono':'Une minute pour aller à l’essentiel.','Business':'Les parcours de celles et ceux qui entreprennent.'};
