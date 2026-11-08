@@ -211,7 +211,67 @@ body{color:#121722;background:#fff;font-family:"Helvetica Neue",Helvetica,Arial,
  .netflix-feature{margin-top:16px!important}
 }
 @media(min-width:1201px){.club-scroll .video,.club-scroll .popular-reel,.club-scroll .insta-tile{flex-basis:19%!important}}
-.empty-format{font-size:13px;color:#777;margin:12px 0 22px}.views-pill{white-space:nowrap!important;font-variant-numeric:tabular-nums!important}.club-section-head{margin-top:30px}.top{height:54px!important;min-height:54px!important;padding-top:0!important;padding-bottom:0!important}.content{padding-top:10px!important}.netflix-feature-info h2{font-size:clamp(35px,6vw,54px)!important;font-weight:850!important;letter-spacing:-1.5px!important}.netflix-feature-kicker img{max-width:84px!important;max-height:34px!important}.archive-video{aspect-ratio:9/16;border:1px solid #e5e6e9;border-radius:11px;background:linear-gradient(145deg,#f7f7f9,#e8e9ed);color:#1c1c20;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:13px;text-align:left;overflow:hidden;gap:10px}.archive-label{font-size:13px;font-weight:750;line-height:1.25;overflow:hidden;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical}.archive-video small{color:#777;font-size:11px}.club-scroll .archive-video{flex:0 0 46.8%}@media(min-width:700px){.club-scroll .archive-video{flex-basis:19%}}</style></head><body>
+.empty-format{font-size:13px;color:#777;margin:12px 0 22px}.views-pill{white-space:nowrap!important;font-variant-numeric:tabular-nums!important}.club-section-head{margin-top:30px}.top{height:54px!important;min-height:54px!important;padding-top:0!important;padding-bottom:0!important}.content{padding-top:10px!important}.netflix-feature-info h2{font-size:clamp(35px,6vw,54px)!important;font-weight:850!important;letter-spacing:-1.5px!important}.netflix-feature-kicker img{max-width:84px!important;max-height:34px!important}.archive-video{aspect-ratio:9/16;border:1px solid #e5e6e9;border-radius:11px;background:linear-gradient(145deg,#f7f7f9,#e8e9ed);color:#1c1c20;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:13px;text-align:left;overflow:hidden;gap:10px}.archive-label{font-size:13px;font-weight:750;line-height:1.25;overflow:hidden;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical}.archive-video small{color:#777;font-size:11px}.club-scroll .archive-video{flex:0 0 46.8%}@media(min-width:700px){.club-scroll .archive-video{flex-basis:19%}}
+/* Responsive design system: desktop web, tablet and mobile app */
+:root{--page-max:1480px;--page-gutter:clamp(18px,3.5vw,64px)}
+html,body{width:100%;max-width:100%;overflow-x:clip}
+.shell{max-width:var(--page-max)!important;width:100%!important}
+.top{padding-inline:var(--page-gutter)!important}
+.content{padding-inline:var(--page-gutter)!important;min-width:0}
+.club-scroll{overscroll-behavior-inline:contain;scrollbar-width:thin;scrollbar-color:#d6d6dc transparent}
+.club-scroll .video,.club-scroll .popular-reel,.club-scroll .insta-tile{min-width:0!important;scroll-snap-align:start}
+.club-section-head{display:flex;justify-content:space-between;min-width:0}
+.club-section-head .section-heading{min-width:0}
+.club-section-head h2{overflow-wrap:anywhere}
+.video-grid .video,.video-grid .poster{min-width:0}
+.video-grid .poster{width:100%}
+img{max-width:100%}
+@media(min-width:1200px){
+ .top{height:74px!important;min-height:74px!important;position:sticky!important;top:0;z-index:35;background:rgba(255,255,255,.96)!important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid #ececf0}
+ .top>a img{height:35px!important;max-width:150px!important}
+ .top-actions{margin-left:auto}
+ .content{padding-top:30px!important;padding-bottom:100px!important}
+ .bottom{position:fixed!important;top:10px!important;bottom:auto!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important;width:auto!important;max-width:none!important;min-height:0!important;height:54px!important;padding:5px 7px!important;border:1px solid #ececf0!important;border-radius:100px!important;box-shadow:none!important;display:flex!important;flex-direction:row!important;gap:3px!important;background:rgba(249,249,251,.96)!important;z-index:40!important}
+ .bottom button{width:auto!important;min-width:84px!important;min-height:42px!important;height:42px!important;padding:0 16px!important;display:flex!important;flex-direction:row!important;justify-content:center!important;align-items:center!important;gap:8px!important;border-radius:100px!important;font-size:12px!important;white-space:nowrap!important}
+ .bottom button svg{width:18px!important;height:18px!important}
+ .bottom button.active{background:#16171b!important;color:white!important}
+ .netflix-feature{max-width:1040px!important;margin:12px auto 54px!important}
+ .netflix-feature-art{min-height:560px!important;max-height:660px!important;aspect-ratio:16/9!important}
+ .netflix-feature-info{bottom:38px!important;left:50px!important;right:50px!important}
+ .netflix-feature-info h2{font-size:clamp(48px,5vw,72px)!important}
+ .club-scroll .video,.club-scroll .popular-reel,.club-scroll .insta-tile{flex:0 0 calc((100% - 5*18px)/6)!important}
+ .club-scroll{gap:18px!important}
+ .video-grid{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:22px 18px!important}
+ .event-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+ .section-heading h2{font-size:clamp(21px,2vw,29px)!important}
+ .section-heading p{font-size:13px!important}
+ .editorial-collections{max-width:900px!important}
+}
+@media(min-width:700px) and (max-width:1199px){
+ .top{height:64px!important;min-height:64px!important}
+ .content{padding-top:24px!important;padding-bottom:115px!important}
+ .netflix-feature{max-width:780px!important;margin:14px auto 40px!important}
+ .netflix-feature-art{min-height:480px!important;max-height:630px!important}
+ .club-scroll .video,.club-scroll .popular-reel,.club-scroll .insta-tile{flex:0 0 calc((100% - 3*14px)/4)!important}
+ .club-scroll{gap:14px!important}
+ .video-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ .bottom{bottom:20px!important;top:auto!important}
+}
+@media(max-width:699px){
+ .top{height:54px!important;min-height:54px!important}
+ .content{padding-inline:16px!important;padding-top:10px!important;padding-bottom:calc(110px + env(safe-area-inset-bottom))!important}
+ .netflix-feature{width:100%!important;max-width:100%!important;margin:12px auto 34px!important}
+ .netflix-feature-art{min-height:clamp(390px,61svh,620px)!important}
+ .club-scroll .video,.club-scroll .popular-reel,.club-scroll .insta-tile{flex:0 0 46.8%!important}
+ .club-scroll{gap:10px!important}
+ .video-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:13px!important}
+ .bottom{position:fixed!important;top:auto!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important;width:calc(100% - 20px)!important;max-width:430px!important;padding:7px 5px calc(7px + env(safe-area-inset-bottom)*.3)!important;display:flex!important;flex-direction:row!important;justify-content:space-around!important;gap:0!important}
+ .bottom button{flex:1!important;min-width:0!important;padding:5px 2px!important;font-size:10px!important}
+ .bottom button svg{width:21px!important;height:21px!important}
+ .event-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:380px){.bottom button{font-size:9px!important}.netflix-feature-info h2{font-size:35px!important}}
+</style></head><body>
 <header class="top shell"><a href="/" aria-label="jewbuzz, accueil"><img src="https://jewbuzz.com/wp-content/uploads/jewbuzz/assets/Logo_jewbuzz_blue.svg" alt="jewbuzz" style="height:31px;max-width:124px;object-fit:contain"></a><div class="top-actions"><button class="iconbtn header-search" id="searchBtn" aria-label="Recherche"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></div></header>
 <main id="main" class="content shell"><section style="padding:24px 0"><h1 style="font-size:26px;font-weight:600">jewbuzz</h1><p>Chargement des contenus…</p><p style="font-size:13px"><a href="https://jewbuzz.com/">Accéder au site officiel</a></p></section></main><nav id="nav" class="bottom"></nav>
 <script>
